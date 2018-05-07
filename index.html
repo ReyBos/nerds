@@ -5,39 +5,45 @@
   <title>Nerds</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header__bar container">
-      <div class="bar-logo">
-        <img src="img/logo.png" alt="" class="bar-logo__img" width="" height="">
-      </div>
-      <nav class="bar-nav">
-        <ul>
-          <li>
-            <a href="#" class="bar-nav__link">Студия</a>
-          </li>
-          <li>
-            <a href="#" class="bar-nav__link">Клиенты</a>
-          </li>
-          <li>
-            <a href="#" class="bar-nav__link">Магазин</a>
-          </li>
-          <li>
-            <a href="#" class="bar-nav__link">Контакты</a>
-          </li>
-          <li>
-            <a href="#" class="bar-nav__link bar-nav__cart">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- /.main-header__bar -->
-    <div class="header__slider container">
+  <header class="main-header">
+    <nav class="main-navigation container">
+      <a class="main-header-logo">
+        <img src="img/logo.svg" width="" height="" alt="Web-студия Nerds">
+      </a>
+      <ul class="site-navigation">
+        <li>
+          <a href="#">Студия</a>
+        </li>
+        <li>
+          <a href="#">Клиенты</a>
+        </li>
+        <li>
+          <a href="#">Магазин</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="cart">
+        <li>
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Слайдер -->
+    <section class="service container">
+      <!-- <h2 class="service__title">Услуги фирмы Nerds</h2> -->
+      <!-- Переключатели -->
       <div class="checkbox-group">
         <input type="radio" id="btn-1" name="slider_check" checked>
         <input type="radio" id="btn-2" name="slider_check">
         <input type="radio" id="btn-3" name="slider_check">
       </div>
+      <!-- Слайды -->
       <div class="slides">
+        <!-- Слайд -->
         <div class="slide">
           <b class="slide__title">Долго, дорого, скрупулёзно.</b>
           <p class="slide__text">
@@ -45,24 +51,26 @@
           </p>
           <a href="#" class="slide__button">Узнать больше</a>
         </div>
+        <!-- Слайд -->
         <div class="slide">
-          <b class="slide__title">Долго, дорого, скрупулёзно.</b>
+          <b class="slide__title">Любите ли Вы математику, как любим её мы?</b>
           <p class="slide__text">
-            Математически выверенный дизайн для Вашего сайта или мобильного приложения
+            Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность всё просчитать
           </p>
           <a href="#" class="slide__button">Узнать больше</a>
         </div>
+        <!-- Слайд -->
         <div class="slide">
-          <b class="slide__title">Долго, дорого, скрупулёзно.</b>
+          <b class="slide__title">Только наркотики, только хардкор!</b>
           <p class="slide__text">
-            Математически выверенный дизайн для Вашего сайта или мобильного приложения
+            Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов
           </p>
           <a href="#" class="slide__button">Узнать больше</a>
         </div>
       </div>
       <!-- /.slides -->
-    </div>
-    <!-- /.main-header__slider -->
-  </header>
+    </section>
+    <!-- /.service -->
+  </main>
 </body>
 </html>
