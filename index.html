@@ -32,7 +32,7 @@
     </nav>
   </header>
   <main class="container">
-    <!-- <h1 class="hidden">Фирма Nerds</h2> -->
+    <!-- <h1 class="hidden">Фирма Nerds</h1> -->
     <!-- Слайдер -->
     <section class="advantages">
       <!-- <h2 class="hidden">Наши преимущества</h2> -->
@@ -192,18 +192,22 @@
   </footer>
   <section class="write-us">
     <!-- <h2 class="hidden">Обратная связь</h2> -->
-    <form action="" method="post" class="write-us-form">
-      <p>
+    <form action="/echo" method="post" class="write-us-form">
+      <p class="form-input">
         <label for="name">Ваше имя:</label>
         <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+      </p>
+      <p class="form-input">
         <label for="email">Ваше имя:</label>
         <input type="text" name="email" id="email" placeholder="Для отправки ответа">
       </p>
-      <p>
+      <p class="form-textarea">
         <label for="msg">Текст письма:</label>
         <textarea name="msg" id="msg" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="button write-us-button" type="submit">Отправить</button>
+      <p class="form-button">
+        <button class="button write-us-button" type="submit">Отправить</button>
+      </p>
     </form>
     <span class="write-us-close">х</span>
   </section>
