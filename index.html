@@ -7,7 +7,7 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation container">
-      <a class="main-header-logo">
+      <a class="main-logo">
         <img src="img/logo.svg" width="" height="" alt="Web-студия Nerds">
       </a>
       <ul class="site-navigation">
@@ -31,10 +31,11 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
+    <!-- <h1 class="hidden">Фирма Nerds</h2> -->
     <!-- Слайдер -->
-    <section class="service container">
-      <!-- <h2 class="service__title">Услуги фирмы Nerds</h2> -->
+    <section class="advantages">
+      <!-- <h2 class="hidden">Преимущества фирмы Nerds</h2> -->
       <!-- Переключатели -->
       <div class="checkbox-group">
         <input type="radio" id="btn-1" name="slider_check" checked>
@@ -45,32 +46,141 @@
       <div class="slides">
         <!-- Слайд -->
         <div class="slide">
-          <b class="slide__title">Долго, дорого, скрупулёзно.</b>
-          <p class="slide__text">
+          <b class="slide-title">Долго, дорого, скрупулёзно.</b>
+          <p class="slide-text">
             Математически выверенный дизайн для Вашего сайта или мобильного приложения
           </p>
-          <a href="#" class="slide__button">Узнать больше</a>
+          <a href="#" class="button slide__button">Узнать больше</a>
         </div>
         <!-- Слайд -->
         <div class="slide">
-          <b class="slide__title">Любите ли Вы математику, как любим её мы?</b>
-          <p class="slide__text">
+          <b class="slide-title">Любите ли Вы математику, как любим её мы?</b>
+          <p class="slide-text">
             Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность всё просчитать
           </p>
-          <a href="#" class="slide__button">Узнать больше</a>
+          <a href="#" class="button slide__button">Узнать больше</a>
         </div>
         <!-- Слайд -->
         <div class="slide">
-          <b class="slide__title">Только наркотики, только хардкор!</b>
-          <p class="slide__text">
+          <b class="slide-title">Только наркотики, только хардкор!</b>
+          <p class="slide-text">
             Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов
           </p>
-          <a href="#" class="slide__button">Узнать больше</a>
+          <a href="#" class="button slide-button">Узнать больше</a>
         </div>
       </div>
       <!-- /.slides -->
     </section>
-    <!-- /.service -->
+    <!-- /.advantages -->
+    <section class="services">
+      <!-- <h2 class="hidden">Услуги фирмы Nerds</h2> -->
+      <ul class="services-list">
+        <li class="services-item">
+          <img src="img/services-img1.png" width="" height="" alt="Создание веб-сайтов">
+          <h3>Веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того как увидит Ваш сайт!</p>
+          <a href="#" class="button services-button">Заказать</a>
+        </li>
+        <li class="services-item">
+          <img src="img/services-img2.png" width="" height="" alt="Создание приложений">
+          <h3>Приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a href="#" class="button services-button">Заказать</a>
+        </li>
+        <li class="services-item">
+          <img src="img/services-img3.png" width="" height="" alt="Создание презентаций">
+          <h3>Презентации</h3>
+          <p>Вы даже не подозреваете, насколько Вы изумительны!</p>
+          <a href="#" class="button services-button">Заказать</a>
+        </li>
+      </ul>
+    </section>
+    <!-- /.services -->
+    <section class="about-us">
+      <!-- <h2 class="hidden">О фирме Nerds</h2> -->
+      <div class="left-block">
+        <p class="left-block-title">
+          Мы - маленькая, но гордая дизайн-студия из Краснодара.
+        </p>
+        <p class="left-block-text">
+          Исповедуем принципы минимализка и чистоты. Ставим математический расчёт выше креатива. Работаем не покладая рук, как роботы.
+        </p>
+        <p class="block-list-title">
+          Выполняем заказы на разработку:
+        </p>
+        <ul class="block-list">
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для IOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <!-- /.left-block -->
+      <div class="right-block">
+        <img src="img/logo.svg" width="" height="" alt="Web-студия Nerds">
+        <p class="founded">Since 2004</p>
+        <p class="block-list-title">
+          Как мы работаем:
+        </p>
+        <ul class="block-list">
+          <li>С самоотдачей 146%</li>
+          <li>Соблюдая стоки на 100%</li>
+          <li>По предоплате 50%</li>
+        </ul>
+      </div>
+      <!-- /.right-block -->
+    </section>
+    <!-- /.about-us -->
+    <section class="our-works">
+      <!-- <h2 class="hidden">Выполенные работы</h2> -->
+      <ul class="our-works-list">
+        <li class="our-works-item">
+          <img src="img/our-works-img1.svg" alt="">
+        </li>
+        <li class="our-works-item">
+          <img src="img/our-works-img2.svg" alt="">
+        </li>
+        <li class="our-works-item">
+          <img src="img/our-works-img3.svg" alt="">
+        </li>
+      </ul>
+    </section>
+    <!-- /.our-works -->
   </main>
+  <footer class="main-footer">
+    <section class="contacts">
+      <!-- <h2 class="hidden">Контакты</h2> -->
+      <div class="container">
+        <div class="contacts-block">
+          <h3 class="contacts-title">Nёrds design studio</h3>
+          <p class="contacts-text">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p class="contacts-text">
+            тел. +7 (812) 275-75-75
+          </p>
+          <a href="#" class="button contacts-button">Напишите нам</a>
+        </div>
+        <!-- /.contacts__block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="socials">
+      <ul class="socials-list">
+        <li class="socials-item">
+          <a href="#">Вконтакте</a>
+        </li>
+        <li class="socials-item">
+          <a href="#">Фейсбук</a>
+        </li>
+        <li class="socials-item">
+          <a href="#">Инстаграмм</a>
+        </li>
+      </ul>
+      <div class="socials-block">
+        <p class="socials-title">Давайте дружить, это выгодно!</p>
+        <p class="socials-text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </section>
+  </footer>
 </body>
 </html>
