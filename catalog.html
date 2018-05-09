@@ -2,15 +2,99 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Магазин шаблонов</title>
+  <title>Магазин макетов</title>
 </head>
 <body>
   <header class="main-header">
-
+    <nav class="main-navigation container">
+      <a class="main-logo" href="index.html">
+        <img src="img/logo.svg" width="" height="" alt="Web-студия Nerds">
+      </a>
+      <ul class="site-navigation">
+        <li>
+          <a href="#">Студия</a>
+        </li>
+        <li>
+          <a href="#">Клиенты</a>
+        </li>
+        <li>
+          <a href="#">Магазин</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="cart">
+        <li>
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="container">
-    <!-- <h1 class="hidden"></h2> -->
-
+    <h1 class="page-title">Магазин готовых макетов</h1>
+    <section class="filters">
+      <!-- <h2 class="hidden">Фильтры</h2> -->
+      <form action="/echo" method="get" class="filter">
+        <!-- Фильтр по цене -->
+        <fieldset class="filter-cost">
+          <legend class="filer-title">Стоимость:</legend>
+          <div class="range">
+            <div class="scale"></div>
+            <div class="switch switch-min"></div>
+            <div class="switch switch-max"></div>
+          </div>
+          <label for="range-min">от<input type="text" id="range-min" value="0"></label>
+          <label for="range-max">до<input type="text" id="range-max" value="15000"></label>
+        </fieldset>
+        <!-- Фильтр по сетке -->
+        <fieldset class="filter-grid">
+          <legend class="filter-title">Сетка:</legend>
+          <ul>
+            <li class="filter-options">
+              <input type="radio" name="grid" class="filter-input filter-input-radio">
+              Адаптивная
+            </li>
+            <li class="filter-options">
+              <input type="radio" name="grid" class="filter-input filter-input-radio">
+              Фиксированная
+            </li>
+            <li class="filter-options">
+              <input type="radio" name="grid" class="filter-input filter-input-radio">
+              Резиновая
+            </li>
+          </ul>
+        </fieldset>
+        <!-- Фильтр по особенностям -->
+        <fieldset class="filter-features">
+          <legend class="filter-title">Особенности:</legend>
+          <ul>
+            <li class="filter-options">
+              <input type="checkbox" name="slider" class="filter-input filter-input-checkbox" checked>
+              Слайдер
+            </li>
+            <li class="filter-options">
+              <input type="checkbox" name="advantages" class="filter-input filter-input-checkbox">
+              Блок преимуществ
+            </li>
+            <li class="filter-options">
+              <input type="checkbox" name="news" class="filter-input filter-input-checkbox" checked>
+              Новости
+            </li>
+            <li class="filter-options">
+              <input type="checkbox" name="gallery" class="filter-input filter-input-checkbox">
+              Галерея
+            </li>
+            <li class="filter-options">
+              <input type="checkbox" name="cart" class="filter-input filter-input-checkbox">
+              Корзина
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+      <!-- /.filter -->
+    </section>
   </main>
   <footer class="main-footer">
 
