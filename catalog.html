@@ -199,10 +199,64 @@
     <!-- /.web-site-design -->
   </main>
   <footer class="main-footer">
-
+    <section class="contacts">
+      <!-- <h2 class="hidden">Контакты</h2> -->
+      <div class="container contacts-map">
+        <div class="contacts-block">
+          <h3 class="contacts-title">Nёrds design studio</h3>
+          <p class="contacts-text">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p class="contacts-text">
+            тел. +7 (812) 275-75-75
+          </p>
+          <a href="#" class="button contacts-button">Напишите нам</a>
+        </div>
+        <!-- /.contacts__block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="socials container">
+      <!-- <h2 class="hidden">Социальные сети</h2> -->
+      <ul class="socials-icons">
+        <li class="socials-icon">
+          <a href="#">ВКонтакте</a>
+        </li>
+        <li class="socials-icon">
+          <a href="#">Фейсбук</a>
+        </li>
+        <li class="socials-icon">
+          <a href="#">Инстаграмм</a>
+        </li>
+      </ul>
+      <div class="socials-content">
+        <p class="socials-title">
+          Давайте дружить, это выгодно!
+        </p>
+        <p class="socials-text">
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+    </section>
   </footer>
   <section class="write-us">
-
+    <!-- <h2 class="hidden">Форма обратной связи</h2> -->
+    <form action="/echo" method="post" class="form">
+      <p class="form-line">
+        <label for="name" class="form-title">Ваше имя:</label>
+        <input type="text" id="name" name="name" class="form-input" placeholder="Представьтесь, пожалуйста">
+        <label for="email" class="form-title">Ваш e-mail:</label>
+        <input type="text" id="email" name="email" class="form-input" placeholder="Для отправки ответа">
+      </p>
+      <p class="form-line">
+        <label for="msg" class="form-title">Текст письма:</label>
+        <textarea name="msg" id="msg" class="form-text" placeholder="В свободной форме"></textarea>
+      </p>
+      <p class="text-line">
+        <button class="button form-button" type="submit">Отправить</button>
+      </p>
+    </form>
+    <span class="write-us-close">х</span>
   </section>
 </body>
 </html>
