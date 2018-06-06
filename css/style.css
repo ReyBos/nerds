@@ -1,0 +1,169 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header,
+.advantages {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.site-navigation,
+.cart {
+  list-style: none;
+}
+
+.site-navigation a,
+.cart a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.cart a:hover {
+  color: #fb565a;
+}
+
+.slide-title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.button {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.button:hover {
+  background-color: #d6494d;
+}
+
+.button:active {
+  background-color: #b63538;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-item:nth-child(2) .button {
+  background-color: #00ca74;
+}
+
+.services-item:nth-child(2) .button:hover {
+  background-color: #01a25e;
+}
+
+.services-item:nth-child(2) .button:active {
+  background-color: #009053;
+}
+
+.services-item:nth-child(3) .button {
+  background-color: #efc84a;
+}
+
+.services-item:nth-child(3) .button:hover {
+  background-color: #d6ae2c;
+}
+
+.services-item:nth-child(3) .button:active {
+  background-color: #c09b24;
+}
+
+.about-us .left-block-title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.about-us .block-list-title {
+  text-transform: uppercase;
+}
+
+.about-us .founded {
+  line-height: 8.56px;
+}
+
+.our-works-list {
+  list-style: none;
+}
+
+.our-works-list img {
+  opacity: 0.2;
+}
+
+.our-works-list img:hover {
+  opacity: 1;
+}
+
+.main-footer .contacts {
+  background-image: url("../img/contacts-map.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.main-footer .contacts-block {
+  background-color: #ffffff;
+}
+
+.main-footer .contacts-title {
+  line-height: 30px;
+}
+
+.main-footer .contacts-text {
+  line-height: 20px;
+}
+
+.main-footer .socials-icons {
+  list-style: none;
+}
+
+.main-footer .socials-title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.write-us .form-title,
+.write-us .form-input,
+.write-us .form-text {
+  line-height: 18px;
+}
+
+.write-us .form-input,
+.write-us .form-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.write-us .close {
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
