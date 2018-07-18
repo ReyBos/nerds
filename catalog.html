@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Магазин макетов</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -12,13 +15,13 @@
       </a>
       <ul class="site-navigation">
         <li>
-          <a href="#">Студия</a>
+          <a href="index.html">Студия</a>
         </li>
         <li>
           <a href="#">Клиенты</a>
         </li>
         <li>
-          <a href="#">Магазин</a>
+          <a class="active">Магазин</a>
         </li>
         <li>
           <a href="#">Контакты</a>
@@ -32,13 +35,13 @@
     </nav>
   </header>
   <main class="container">
-    <h1 class="page-title">Магазин готовых макетов</h1>
+    <h1 class="page-title">Добро пожаловать в магазин готовых макетов</h1>
     <section class="filters">
       <!-- <h2 class="hidden">Фильтры</h2> -->
       <form action="/echo" method="get" class="filter">
         <!-- Фильтр по цене -->
         <fieldset class="filter-cost">
-          <legend class="filer-title">Стоимость:</legend>
+          <legend class="filter-title">Стоимость:</legend>
           <div class="range">
             <div class="scale"></div>
             <div class="switch switch-min"></div>
@@ -51,15 +54,15 @@
         <fieldset class="filter-grid">
           <legend class="filter-title">Сетка:</legend>
           <ul>
-            <li class="filter-options">
-              <input type="radio" name="grid" class="filter-input filter-input-radio">
+            <li class="list-item">
+              <input type="radio" name="grid" class="filter-input filter-input-radio" checked>
               Адаптивная
             </li>
-            <li class="filter-options">
+            <li class="list-item">
               <input type="radio" name="grid" class="filter-input filter-input-radio">
               Фиксированная
             </li>
-            <li class="filter-options">
+            <li class="list-item">
               <input type="radio" name="grid" class="filter-input filter-input-radio">
               Резиновая
             </li>
@@ -69,29 +72,29 @@
         <fieldset class="filter-features">
           <legend class="filter-title">Особенности:</legend>
           <ul>
-            <li class="filter-options">
+            <li class="list-item">
               <input type="checkbox" name="slider" class="filter-input filter-input-checkbox" checked>
               Слайдер
             </li>
-            <li class="filter-options">
+            <li class="list-item">
               <input type="checkbox" name="advantages" class="filter-input filter-input-checkbox">
               Блок преимуществ
             </li>
-            <li class="filter-options">
+            <li class="list-item">
               <input type="checkbox" name="news" class="filter-input filter-input-checkbox" checked>
               Новости
             </li>
-            <li class="filter-options">
+            <li class="list-item">
               <input type="checkbox" name="gallery" class="filter-input filter-input-checkbox">
               Галерея
             </li>
-            <li class="filter-options">
+            <li class="list-item">
               <input type="checkbox" name="cart" class="filter-input filter-input-checkbox">
               Корзина
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button type="submit" class="filter-button">Показать</button>
       </form>
       <!-- /.filter -->
     </section>
@@ -100,10 +103,10 @@
       <!-- Блок сортировки -->
       <section class="sort">
         <p class="sort-title">Сортировать</p>
-        <ul class="sort-type">
-          <li class="sort-item-text">По цене</li>
-          <li class="sort-item-text">По типу</li>
-          <li class="sort-item-text">По функционалу</li>
+        <ul class="sort-list">
+          <li class="list-item"><a href="#" class="list-link">По цене</a></li>
+          <li class="list-item"><a href="#" class="list-link">По типу</a></li>
+          <li class="list-item"><a href="#" class="list-link">По функционалу</a></li>
         </ul>
         <ul class="sort-type">
           <li class="sort-item-arrow arrow-down"></li>
@@ -114,7 +117,7 @@
       <section class="content">
         <ul>
           <li class="content-item">
-            <p class="content-dots">...</p>
+            <img src="" class="dottes" width="" height="" alt="">
             <p>
               <img src="img/catalog-item1.jpg" width="" height="" alt="Одностраничный макет с авторским дизайном">
             </p>
@@ -122,11 +125,11 @@
             <div class="content-info">
               <h3 class="content-info-title">Aviator</h3>
               <p class="content-info-text">Одностраничный макет с авторским дизайном</p>
-              <p class="content-info-price">8000 р.</p>
+              <button class="content-info-price">8000 р.</button>
             </div>
           </li>
           <li class="content-item">
-            <p class="content-dots">...</p>
+            <img src="" class="dottes" width="" height="" alt="">
             <p>
               <img src="img/catalog-item2.jpg" width="" height="" alt="Интернет-магазин с личным кабинетом">
             </p>
@@ -134,23 +137,22 @@
             <div class="content-info">
               <h3 class="content-info-title">Sunset</h3>
               <p class="content-info-text">Интернет-магазин с личным кабинетом</p>
-              <p class="content-info-price">10000 р.</p>
+              <button class="content-info-price">10000 р.</button>
             </div>
           </li>
           <li class="content-item">
-            <p class="content-dots">...</p>
+            <img src="" class="dottes" width="" height="" alt="">
             <p>
               <img src="img/catalog-item3.jpg" width="" height="" alt="Отличный макет для личного блога">
             </p>
             <!-- Всплывающее окно -->
             <div class="content-info">
               <h3 class="content-info-title">Forte</h3>
-              <p class="content-info-text">Отличный макет для личного блога</p>
-              <p class="content-info-price">5000 р.</p>
+              <p class="content-info-text">Отличный макет для личного блога</p><button class="content-info-price">5000 р.</button>
             </div>
           </li>
           <li class="content-item">
-            <p class="content-dots">...</p>
+            <img src="" class="dottes" width="" height="" alt="">
             <p>
               <img src="img/catalog-item4.jpg" width="" height="" alt="Сайт для ресторана быстрого питания">
             </p>
@@ -158,11 +160,11 @@
             <div class="content-info">
               <h3 class="content-info-title">Modern orgaic thai</h3>
               <p class="content-info-text">Сайт для ресторана быстрого питания</p>
-              <p class="content-info-price">12000 р.</p>
+              <button class="content-info-price">12000 р.</button>
             </div>
           </li>
           <li class="content-item">
-            <p class="content-dots">...</p>
+            <img src="" class="dottes" width="" height="" alt="">
             <p>
               <img src="img/catalog-item5.jpg" width="" height="" alt="Макет для блога о путешествиях">
             </p>
@@ -170,11 +172,11 @@
             <div class="content-info">
               <h3 class="content-info-title">Avenue</h3>
               <p class="content-info-text">Макет для блога о путешествиях</p>
-              <p class="content-info-price">8000 р.</p>
+              <button class="content-info-price">8000 р.</button>
             </div>
           </li>
           <li class="content-item">
-            <p class="content-dots">...</p>
+            <img src="" class="dottes" width="" height="" alt="">
             <p>
               <img src="img/catalog-item6.jpg" width="" height="" alt="Интернет магазин с галереей товаров">
             </p>
@@ -182,7 +184,7 @@
             <div class="content-info">
               <h3 class="content-info-title">Dovetail</h3>
               <p class="content-info-text">Интернет магазин с галереей товаров</p>
-              <p class="content-info-price">14000 р.</p>
+              <button class="content-info-price">14000 р.</button>
             </div>
           </li>
         </ul>
@@ -205,7 +207,7 @@
         <div class="contacts-block">
           <h3 class="contacts-title">Nёrds design studio</h3>
           <p class="contacts-text">
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
           </p>
           <p class="contacts-text">
             тел. +7 (812) 275-75-75
