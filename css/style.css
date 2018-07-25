@@ -496,9 +496,35 @@ a {
   border-bottom: none;
 }
 
+.content-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.content-item {
+  width: 240px;
+  margin-bottom: 80px;
+}
+
 .content-item,
 .pagination-list {
   list-style: none;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
 }
 
 .content-info-title {
