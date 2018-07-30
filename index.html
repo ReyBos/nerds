@@ -34,56 +34,60 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
+  <main>
     <!-- <h1 class="hidden">Фирма Nёrds</h1> -->
     <!-- Слайдер -->
     <section class="advantages">
       <!-- <h2 class="hidden">Наши преимущества</h2> -->
-      <!-- Переключатели -->
-      <div class="checkbox-group">
-        <input type="radio" id="btn-1" name="slider_check" checked>
-        <input type="radio" id="btn-2" name="slider_check">
-        <input type="radio" id="btn-3" name="slider_check">
-      </div>
-      <!-- Слайд 1 -->
-      <div class="advantages-slide">
-        <div class="content">
-          <p class="title">Долго, дорого, скрупулёзно.</p>
-          <p class="text">
-            Математически выверенный дизайн для Вашего сайта или мобильного приложения
-          </p>
-          <a href="#" class="button slide__button">Узнать больше</a>
+      <div class="container">
+        <div class="slider">
+          <!-- Переключатели -->
+          <input type="radio" id="btn-1" name="slider_check" checked>
+          <input type="radio" id="btn-2" name="slider_check">
+          <input type="radio" id="btn-3" name="slider_check">
+          <div class="slider-controlles">
+            <label class="slider-control" for="btn-1"></label>
+            <label class="slider-control" for="btn-2"></label>
+            <label class="slider-control" for="btn-3"></label>
+          </div>
+          <div class="slides">
+            <!-- Слайд 1 -->
+            <div class="slide">
+              <p class="slide-title">Долго, дорого, скрупулёзно.</p>
+              <p class="slide-text">
+                Математически выверенный дизайн <br>
+                для Вашего сайта или мобильного приложения
+              </p>
+              <a href="#" class="button slide-button">Узнать больше</a>
+            </div>
+            <!-- /.slide -->
+            <!-- Слайд 2 -->
+            <div class="slide">
+              <p class="slide-title">Любите ли Вы математику, как любим её мы?</p>
+              <p class="slide-text">
+                Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность всё просчитать
+              </p>
+              <a href="#" class="button slide-button">Узнать больше</a>
+            </div>
+            <!-- /.slide -->
+            <!-- Слайд 3 -->
+            <div class="slide">
+              <p class="slide-title">Только наркотики, только хардкор!</p>
+              <p class="slide-text">
+                Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов
+              </p>
+              <a href="#" class="button slide-button">Узнать больше</a>
+            </div>
+            <!-- /.slide -->
+          </div>
+          <!-- /.slides -->
         </div>
-        <!-- /.slide-content -->
-        <div class="img"></div>
+        <!-- /.slider -->
       </div>
-      <!-- Слайд 2 -->
-      <div class="advantages-slide">
-        <div class="content">
-          <p class="title">Любите ли Вы математику, как любим её мы?</p>
-          <p class="text">
-            Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность всё просчитать
-          </p>
-          <a href="#" class="button slide__button">Узнать больше</a>
-        </div>
-        <!-- /.slide-content -->
-        <div class="img"></div>
-      </div>
-      <!-- Слайд 3 -->
-      <div class="advantages-slide">
-        <div class="content">
-          <p class="title">Только наркотики, только хардкор!</p>
-          <p class="text">
-            Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов
-          </p>
-          <a href="#" class="button slide-button">Узнать больше</a>
-        </div>
-        <!-- /.slide-content -->
-        <div class="img"></div>
-      </div>
+      <!-- /.container -->
     </section>
     <!-- /.advantages -->
-    <section class="services">
+    <section class="services container">
       <!-- <h2 class="hidden">Наши услуги</h2> -->
       <ul class="services-list">
         <li class="services-item">
@@ -107,41 +111,43 @@
       </ul>
     </section>
     <!-- /.services -->
-    <section class="about-us">
+    <section class="about-us container">
       <!-- <h2 class="hidden">О нас</h2> -->
       <div class="left-block">
         <p class="left-block-title">
-          Мы - маленькая, но гордая дизайн-студия из Краснодара.
+          Мы — маленькая, но гордая дизайн-студия из Краснодара.
         </p>
         <p class="left-block-text">
           Исповедуем принципы минимализка и чистоты. Ставим математический расчёт выше креатива. Работаем не покладая рук, как роботы.
         </p>
-        <p class="block-list-title">
+        <p class="left-block-list-title">
           Выполняем заказы на разработку:
         </p>
         <ul class="block-list">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для IOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
+          <li class="block-list-item">Веб-сайтов любой сложности</li>
+          <li class="block-list-item">Мобильных приложений для IOS и Android</li>
+          <li class="block-list-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
       <!-- /.left-block -->
       <div class="right-block">
-        <img src="img/svg/logo.svg" width="187" height="75" alt="Web-студия Nerds" class="logo">
+        <p class="logo">
+          <img src="img/svg/logo.svg" width="187" height="75" alt="Web-студия Nerds" class="logo-img">
+        </p>
         <p class="founded">Since 2004</p>
         <p class="block-list-title">
           Как мы работаем:
         </p>
         <ul class="block-list">
-          <li>С самоотдачей 146%</li>
-          <li>Соблюдая стоки на 100%</li>
-          <li>По предоплате 50%</li>
+          <li class="block-list-item">С самоотдачей 146%</li>
+          <li class="block-list-item">Соблюдая стоки на 100%</li>
+          <li class="block-list-item">По предоплате 50%</li>
         </ul>
       </div>
       <!-- /.right-block -->
     </section>
     <!-- /.about-us -->
-    <section class="our-works">
+    <section class="our-works container">
       <!-- <h2 class="hidden">Выполенные работы</h2> -->
       <ul class="our-works-list">
         <li class="our-works-item">
