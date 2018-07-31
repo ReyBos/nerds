@@ -5,7 +5,7 @@
   <title>Главная - Nёrds</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?3">
 </head>
 <body>
   <header class="main-header">
@@ -35,10 +35,10 @@
     </nav>
   </header>
   <main>
-    <!-- <h1 class="hidden">Фирма Nёrds</h1> -->
+    <!-- <h1 class="visually-hidden">Фирма Nёrds</h1> -->
     <!-- Слайдер -->
     <section class="advantages">
-      <!-- <h2 class="hidden">Наши преимущества</h2> -->
+      <!-- <h2 class="visually-hidden">Наши преимущества</h2> -->
       <div class="container">
         <div class="slider">
           <!-- Переключатели -->
@@ -88,7 +88,7 @@
     </section>
     <!-- /.advantages -->
     <section class="services container">
-      <!-- <h2 class="hidden">Наши услуги</h2> -->
+      <!-- <h2 class="visually-hidden">Наши услуги</h2> -->
       <ul class="services-list">
         <li class="services-item">
           <div class="services-img"></div>
@@ -112,7 +112,7 @@
     </section>
     <!-- /.services -->
     <section class="about-us container">
-      <!-- <h2 class="hidden">О нас</h2> -->
+      <!-- <h2 class="visually-hidden">О нас</h2> -->
       <div class="left-block">
         <p class="left-block-title">
           Мы — маленькая, но гордая дизайн-студия из Краснодара.
@@ -148,7 +148,7 @@
     </section>
     <!-- /.about-us -->
     <section class="our-works container">
-      <!-- <h2 class="hidden">Выполенные работы</h2> -->
+      <!-- <h2 class="visually-hidden">Выполенные работы</h2> -->
       <ul class="our-works-list">
         <li class="our-works-item">
           <img src="img/our-works-img1.png" alt="" width="198" height="37">
@@ -157,7 +157,7 @@
           <img src="img/our-works-img2.png" alt="" width="199" height="68">
         </li>
         <li class="our-works-item">
-          <img src="img/our-works-img3.png" alt="" width="209" height="90">
+          <img src="img/our-works-img3.png" alt="" width="209" height="86">
         </li>
       </ul>
     </section>
@@ -165,7 +165,7 @@
   </main>
   <footer class="main-footer">
     <section class="contacts">
-      <!-- <h2 class="hidden">Контакты</h2> -->
+      <!-- <h2 class="visually-hidden">Контакты</h2> -->
       <div class="container">
         <div class="contacts-block">
           <h3 class="contacts-title">Nёrds design studio</h3>
@@ -182,16 +182,22 @@
       <!-- /.container -->
     </section>
     <section class="socials container">
-      <!-- <h2 class="hidden">Социальные сети</h2> -->
+      <!-- <h2 class="visually-hidden">Социальные сети</h2> -->
       <ul class="socials-icons">
         <li class="socials-icon">
-          <a href="#">ВКонтакте</a>
+          <a href="#" class="socials-button">
+            <!--<span class="visually-hidden">ВКонтакте</span>-->
+          </a>
         </li>
         <li class="socials-icon">
-          <a href="#">Фейсбук</a>
+          <a href="#" class="socials-button">
+            <!--<span class="visually-hidden">Фейсбук</span>-->
+          </a>
         </li>
         <li class="socials-icon">
-          <a href="#">Инстаграмм</a>
+          <a href="#" class="socials-button">
+            <!--<span class="visually-hidden">Инстаграм</span>-->
+          </a>
         </li>
       </ul>
       <div class="socials-content">
@@ -205,7 +211,7 @@
     </section>
   </footer>
   <section class="write-us">
-    <!-- <h2 class="hidden">Форма обратной связи</h2> -->
+    <!-- <h2 class="visually-hidden">Форма обратной связи</h2> -->
     <form action="/echo" method="post" class="form">
       <p class="form-line">
         <label for="name" class="form-title">Ваше имя:</label>
