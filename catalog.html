@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Магазин макетов</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?2">
 </head>
 <body>
   <header class="main-header">
@@ -35,7 +35,7 @@
     </nav>
   </header>
   <header  class="catalog-title">
-    <h1>Добро пожаловать в магазин готовых макетов</h1>
+    <h1 class="container">Добро пожаловать в магазин готовых макетов</h1>
   </header>
   <main class="catalog-content container">
     <section class="filters">
@@ -45,28 +45,34 @@
         <fieldset class="filter-cost">
           <legend class="filter-title">Стоимость:</legend>
           <div class="range">
-            <div class="scale"></div>
+            <div class="scale"><div class="scale-active"></div></div>
             <div class="switch switch-min"></div>
             <div class="switch switch-max"></div>
           </div>
-          <label for="range-min">от<input type="text" id="range-min" placeholder="0"></label>
-          <label for="range-max">до<input type="text" id="range-max" placeholder="15000"></label>
+          <div class="price">
+            <p class="price-block">
+              от <input type="text" id="range-min" value="0" class="price-value" autocomplete="off">
+            </p>
+            <p class="price-block">
+              до <input type="text" id="range-max" value="15000" class="price-value" autocomplete="off">
+            </p>
+          </div>
         </fieldset>
         <!-- Фильтр по сетке -->
         <fieldset class="filter-grid">
           <legend class="filter-title">Сетка:</legend>
           <ul>
             <li class="list-item">
-              <input type="radio" name="grid" class="filter-input filter-input-radio" checked>
-              Адаптивная
+              <input type="radio" name="grid" id="adaptive" class="filter-input filter-input-radio" checked>
+              <label for="adaptive" class="filter-label">Адаптивная</label>
             </li>
             <li class="list-item">
-              <input type="radio" name="grid" class="filter-input filter-input-radio">
-              Фиксированная
+              <input type="radio" name="grid" id="fixed" class="filter-input filter-input-radio">
+              <label for="fixed" class="filter-label">Фиксированная</label>
             </li>
             <li class="list-item">
-              <input type="radio" name="grid" class="filter-input filter-input-radio">
-              Резиновая
+              <input type="radio" name="grid" id="rubber" class="filter-input filter-input-radio">
+              <label for="rubber" class="filter-label">Резиновая</label>
             </li>
           </ul>
         </fieldset>
@@ -75,28 +81,28 @@
           <legend class="filter-title">Особенности:</legend>
           <ul>
             <li class="list-item">
-              <input type="checkbox" name="slider" class="filter-input filter-input-checkbox" checked>
-              Слайдер
+              <input type="checkbox" name="slider" id="features-slider" class="filter-input filter-input-checkbox" checked>
+              <label for="features-slider" class="filter-label">Слайдер</label>
             </li>
             <li class="list-item">
-              <input type="checkbox" name="advantages" class="filter-input filter-input-checkbox">
-              Блок преимуществ
+              <input type="checkbox" name="advantages" id="features-advantages" class="filter-input filter-input-checkbox">
+              <label for="features-advantages" class="filter-label">Блок преимуществ</label>
             </li>
             <li class="list-item">
-              <input type="checkbox" name="news" class="filter-input filter-input-checkbox" checked>
-              Новости
+              <input type="checkbox" name="news" id="features-news" class="filter-input filter-input-checkbox" checked>
+              <label for="features-news" class="filter-label">Новости</label>
             </li>
             <li class="list-item">
-              <input type="checkbox" name="gallery" class="filter-input filter-input-checkbox">
-              Галерея
+              <input type="checkbox" name="gallery" id="features-gallery" class="filter-input filter-input-checkbox">
+              <label for="features-gallery" class="filter-label">Галерея</label>
             </li>
             <li class="list-item">
-              <input type="checkbox" name="cart" class="filter-input filter-input-checkbox">
-              Корзина
+              <input type="checkbox" name="cart" id="features-cart" class="filter-input filter-input-checkbox">
+              <label for="features-cart" class="filter-label">Корзина</label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit" class="filter-button">Показать</button>
+        <button type="submit" class="button filter-button">Показать</button>
       </form>
       <!-- /.filter -->
     </section>
@@ -104,89 +110,78 @@
       <!-- <h2 class="hidden">Готовые макеты сайтов</h2> -->
       <!-- Блок сортировки -->
       <section class="sort">
-        <p class="sort-title">Сортировать</p>
+        <p class="sort-title">Сортировать:</p>
         <ul class="sort-list">
-          <li class="list-item"><a href="#" class="list-link">По цене</a></li>
-          <li class="list-item"><a href="#" class="list-link">По типу</a></li>
-          <li class="list-item"><a href="#" class="list-link">По функционалу</a></li>
+          <li class="item">
+            <a href="#" class="link">По цене</a>
+          </li>
+          <li class="item">
+            <a href="#" class="link">По типу</a>
+          </li>
+          <li class="item">
+            <a href="#" class="link">По функционалу</a>
+          </li>
         </ul>
         <ul class="sort-type">
-          <li class="sort-item-arrow arrow-down"></li>
-          <li class="sort-item-arrow arrow-up"></li>
+          <li class="item-arrow arrow-down arrow-down-active"></li>
+          <li class="item-arrow arrow-up arrow-up"></li>
         </ul>
       </section>
       <!-- Превьюшки шаблонов с ценой -->
       <section class="content">
         <ul class="content-list">
           <li class="content-item">
-            <img src="" class="dottes" width="" height="" alt="">
-            <p>
-              <img src="img/catalog-item1.jpg" width="240" height="240" alt="Одностраничный макет с авторским дизайном">
-            </p>
+            <img src="img/catalog-item1.jpg" width="240" height="240" alt="Одностраничный макет с авторским дизайном">
             <!-- Всплывающее окно -->
             <div class="content-info">
               <h3 class="content-info-title">Aviator</h3>
               <p class="content-info-text">Одностраничный макет с авторским дизайном</p>
-              <button class="content-info-price">8000 р.</button>
+              <button class="button content-info-price">8000 р.</button>
             </div>
           </li>
           <li class="content-item">
-            <img src="" class="dottes" width="" height="" alt="">
-            <p>
-              <img src="img/catalog-item2.jpg" width="240" height="240" alt="Интернет-магазин с личным кабинетом">
-            </p>
+            <img src="img/catalog-item2.jpg" width="240" height="240" alt="Интернет-магазин с личным кабинетом">
             <!-- Всплывающее окно -->
             <div class="content-info">
               <h3 class="content-info-title">Sunset</h3>
               <p class="content-info-text">Интернет-магазин с личным кабинетом</p>
-              <button class="content-info-price">10000 р.</button>
+              <button class="button content-info-price">10000 р.</button>
             </div>
           </li>
           <li class="content-item">
-            <img src="" class="dottes" width="" height="" alt="">
-            <p>
-              <img src="img/catalog-item3.jpg" width="240" height="240" alt="Отличный макет для личного блога">
-            </p>
+            <img src="img/catalog-item3.jpg" width="240" height="240" alt="Отличный макет для личного блога">
             <!-- Всплывающее окно -->
             <div class="content-info">
               <h3 class="content-info-title">Forte</h3>
-              <p class="content-info-text">Отличный макет для личного блога</p><button class="content-info-price">5000 р.</button>
+              <p class="content-info-text">Отличный макет для личного блога</p>
+              <button class="button content-info-price">5000 р.</button>
             </div>
           </li>
           <li class="content-item">
-            <img src="" class="dottes" width="" height="" alt="">
-            <p>
-              <img src="img/catalog-item4.jpg" width="240" height="240" alt="Сайт для ресторана быстрого питания">
-            </p>
+            <img src="img/catalog-item4.jpg" width="240" height="240" alt="Сайт для ресторана быстрого питания">
             <!-- Всплывающее окно -->
             <div class="content-info">
               <h3 class="content-info-title">Modern orgaic thai</h3>
               <p class="content-info-text">Сайт для ресторана быстрого питания</p>
-              <button class="content-info-price">12000 р.</button>
+              <button class="button content-info-price">12000 р.</button>
             </div>
           </li>
           <li class="content-item">
-            <img src="" class="dottes" width="" height="" alt="">
-            <p>
-              <img src="img/catalog-item5.jpg" width="240" height="240" alt="Макет для блога о путешествиях">
-            </p>
+            <img src="img/catalog-item5.jpg" width="240" height="240" alt="Макет для блога о путешествиях">
             <!-- Всплывающее окно -->
             <div class="content-info">
               <h3 class="content-info-title">Avenue</h3>
               <p class="content-info-text">Макет для блога о путешествиях</p>
-              <button class="content-info-price">8000 р.</button>
+              <button class="button content-info-price">8000 р.</button>
             </div>
           </li>
           <li class="content-item">
-            <img src="" class="dottes" width="" height="" alt="">
-            <p>
-              <img src="img/catalog-item6.jpg" width="240" height="240" alt="Интернет магазин с галереей товаров">
-            </p>
+            <img src="img/catalog-item6.jpg" width="240" height="240" alt="Интернет магазин с галереей товаров">
             <!-- Всплывающее окно -->
             <div class="content-info">
               <h3 class="content-info-title">Dovetail</h3>
               <p class="content-info-text">Интернет магазин с галереей товаров</p>
-              <button class="content-info-price">14000 р.</button>
+              <button class="button content-info-price">14000 р.</button>
             </div>
           </li>
         </ul>
@@ -204,8 +199,8 @@
   </main>
   <footer class="main-footer">
     <section class="contacts">
-      <!-- <h2 class="hidden">Контакты</h2> -->
-      <div class="container contacts-map">
+      <!-- <h2 class="visually-hidden">Контакты</h2> -->
+      <div class="container">
         <div class="contacts-block">
           <h3 class="contacts-title">Nёrds design studio</h3>
           <p class="contacts-text">
@@ -221,16 +216,22 @@
       <!-- /.container -->
     </section>
     <section class="socials container">
-      <!-- <h2 class="hidden">Социальные сети</h2> -->
+      <!-- <h2 class="visually-hidden">Социальные сети</h2> -->
       <ul class="socials-icons">
         <li class="socials-icon">
-          <a href="#">ВКонтакте</a>
+          <a href="#" class="socials-button">
+            <!--<span class="visually-hidden">ВКонтакте</span>-->
+          </a>
         </li>
         <li class="socials-icon">
-          <a href="#">Фейсбук</a>
+          <a href="#" class="socials-button">
+            <!--<span class="visually-hidden">Фейсбук</span>-->
+          </a>
         </li>
         <li class="socials-icon">
-          <a href="#">Инстаграмм</a>
+          <a href="#" class="socials-button">
+            <!--<span class="visually-hidden">Инстаграм</span>-->
+          </a>
         </li>
       </ul>
       <div class="socials-content">
