@@ -210,24 +210,28 @@
       </div>
     </section>
   </footer>
-  <section class="write-us">
+  <section class="modal modal-write-us">
     <!-- <h2 class="visually-hidden">Форма обратной связи</h2> -->
     <form action="/echo" method="post" class="form">
-      <p class="form-line">
-        <label for="name" class="form-title">Ваше имя:</label>
-        <input type="text" id="name" name="name" class="form-input" placeholder="Представьтесь, пожалуйста">
-        <label for="email" class="form-title">Ваш e-mail:</label>
-        <input type="text" id="email" name="email" class="form-input" placeholder="Для отправки ответа">
-      </p>
+      <div class="form-line">
+        <p class="form-block">
+          <label for="name" class="form-title">Ваше имя:</label>
+          <input type="text" id="name" name="name" class="form-input" placeholder="Представьтесь, пожалуйста" autocomplete="off">
+        </p>
+        <p class="form-block">
+          <label for="email" class="form-title">Ваш e-mail:</label>
+          <input type="text" id="email" name="email" class="form-input" placeholder="Для отправки ответа" autocomplete="off">
+        </p>
+      </div>
       <p class="form-line">
         <label for="msg" class="form-title">Текст письма:</label>
         <textarea name="msg" id="msg" class="form-text" placeholder="В свободной форме"></textarea>
       </p>
-      <p class="text-line">
+      <p class="form-line">
         <button class="button form-button" type="submit">Отправить</button>
       </p>
     </form>
-    <span class="close">х</span>
+    <button class="modal-close">Закрыть</button>
   </section>
 </body>
 </html>
